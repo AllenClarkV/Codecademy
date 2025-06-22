@@ -1,0 +1,43 @@
+a {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #2176ff;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #5495ff;
+}
+
+.btn {
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+}
+
+.btn:hover {
+  color: #2176ff;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+
+.btn:active {
+  color: #ffffff;
+  background-color: #2176ff;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.activity:hover {
+  border-radius: 20px;
+  background-color: #2176de;
+  transition: 1s;
+}
