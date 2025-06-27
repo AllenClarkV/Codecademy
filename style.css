@@ -39,7 +39,6 @@ main {
   animation: fadeIn 0.5s ease-in forwards;
 }
 
-header,
 main,
 footer {
   display: flex;
@@ -50,11 +49,20 @@ footer {
 
 /* ========== Header ========== */
 header {
-  height: 80px;
+  display: flex;
+  width: 100%;
+  justify-content: left;
+  align-items: center;
+  position: fixed;
+  height: 60px;
   align-items: left;
-  background-color: #00000080;
+  background-color: #00000090;
+  z-index: 10;
 }
 
+main {
+  padding-top: 60px;
+}
 header nav {
   padding-left: 20px;
 }
@@ -178,6 +186,7 @@ li {
 
 .construction h1 {
   color: #eff1f3;
+  text-align: center;
 }
 
 /* ========== Section ========== */
@@ -248,10 +257,13 @@ section {
 .textbox {
   padding: 25px 40px;
   position: relative;
-  font-size: 18px;
   background-color: #0f0f0f;
   border-radius: 25px;
   transition: background-color 0.5s ease, box-shadow 0.3s ease;
+}
+
+.textbox h1 {
+  font-size: 1.5rem;
 }
 
 /* ========== Checkpoints ========== */
@@ -396,6 +408,10 @@ footer a:hover {
 
   .home-image img {
     width: 50vw;
+  }
+
+  header nav {
+    padding-left: 5px;
   }
 
   header nav a {
