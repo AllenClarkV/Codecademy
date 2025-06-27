@@ -117,14 +117,9 @@ li {
 }
 
 /* ========== Buttons & Icons ========== */
-.buttons {
-  display: flex;
-  flex-direction: row;
-}
-
 .btn {
   display: inline-flex;
-  margin: 18px 5px;
+  margin: 5px 1px;
   padding: 1rem 2.8rem;
   background-color: transparent;
   border-radius: 4rem;
