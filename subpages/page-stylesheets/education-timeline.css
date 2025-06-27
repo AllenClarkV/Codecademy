@@ -1,0 +1,68 @@
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  background: white;
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+  margin-top: 65px;
+  z-index: -1;
+  animation: moveline 5s linear forwards;
+}
+
+@media screen and (max-width: 900px) {
+  .timeline {
+    margin: 50px auto;
+  }
+  .timeline::after {
+    left: 31px;
+  }
+  .container {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+  }
+  .textbox {
+    font-size: 14px;
+  }
+  .rightcontainer {
+    left: 0;
+  }
+  .rightcontainer .checkpoint, .leftcontainer .checkpoint {
+    left: 10px;
+  }
+}
+
+.container:nth-child(1) {
+  animation-delay: 0s;
+}
+.container:nth-child(2) {
+  animation-delay: 1s;
+}
+.container:nth-child(3) {
+  animation-delay: 2s;
+}
+.container:nth-child(4) {
+  animation-delay: 3s;
+}
+.container:nth-child(5) {
+  animation-delay: 4s;
+}
+
+.container:nth-child(1) .checkpoint {
+  animation-delay: 0.5s;
+}
+.container:nth-child(2) .checkpoint {
+  animation-delay: 1.5s;
+}
+.container:nth-child(3) .checkpoint {
+  animation-delay: 2.5s;
+}
+.container:nth-child(4) .checkpoint {
+  animation-delay: 3.5s;
+}
+.container:nth-child(5) .checkpoint {
+  animation-delay: 4.5s;
+}
